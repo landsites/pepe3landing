@@ -9,840 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe 3.0</title>
 
-    <style type="text/css">
-        :host,
-        :root {
-            --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
-            --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
-            --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
-            --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
-            --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
-            --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
-        }
-
-        svg:not(:host).svg-inline--fa,
-        svg:not(:root).svg-inline--fa {
-            overflow: visible;
-            box-sizing: content-box
-        }
-
-        .svg-inline--fa {
-            display: var(--fa-display, inline-block);
-            height: 1em;
-            overflow: visible;
-            vertical-align: -.125em
-        }
-
-        .svg-inline--fa.fa-2xs {
-            vertical-align: .1em
-        }
-
-        .svg-inline--fa.fa-xs {
-            vertical-align: 0
-        }
-
-        .svg-inline--fa.fa-sm {
-            vertical-align: -.0714285705em
-        }
-
-        .svg-inline--fa.fa-lg {
-            vertical-align: -.2em
-        }
-
-        .svg-inline--fa.fa-xl {
-            vertical-align: -.25em
-        }
-
-        .svg-inline--fa.fa-2xl {
-            vertical-align: -.3125em
-        }
-
-        .svg-inline--fa.fa-pull-left {
-            margin-right: var(--fa-pull-margin, .3em);
-            width: auto
-        }
-
-        .svg-inline--fa.fa-pull-right {
-            margin-left: var(--fa-pull-margin, .3em);
-            width: auto
-        }
-
-        .svg-inline--fa.fa-li {
-            width: var(--fa-li-width, 2em);
-            top: .25em
-        }
-
-        .svg-inline--fa.fa-fw {
-            width: var(--fa-fw-width, 1.25em)
-        }
-
-        .fa-layers svg.svg-inline--fa {
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            top: 0
-        }
-
-        .fa-layers-counter,
-        .fa-layers-text {
-            display: inline-block;
-            position: absolute;
-            text-align: center
-        }
-
-        .fa-layers {
-            display: inline-block;
-            height: 1em;
-            position: relative;
-            text-align: center;
-            vertical-align: -.125em;
-            width: 1em
-        }
-
-        .fa-layers svg.svg-inline--fa {
-            -webkit-transform-origin: center center;
-            transform-origin: center center
-        }
-
-        .fa-layers-text {
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            -webkit-transform-origin: center center;
-            transform-origin: center center
-        }
-
-        .fa-layers-counter {
-            background-color: var(--fa-counter-background-color, #ff253a);
-            border-radius: var(--fa-counter-border-radius, 1em);
-            box-sizing: border-box;
-            color: var(--fa-inverse, #fff);
-            line-height: var(--fa-counter-line-height, 1);
-            max-width: var(--fa-counter-max-width, 5em);
-            min-width: var(--fa-counter-min-width, 1.5em);
-            overflow: hidden;
-            padding: var(--fa-counter-padding, .25em .5em);
-            right: var(--fa-right, 0);
-            text-overflow: ellipsis;
-            top: var(--fa-top, 0);
-            -webkit-transform: scale(var(--fa-counter-scale, .25));
-            transform: scale(var(--fa-counter-scale, .25));
-            -webkit-transform-origin: top right;
-            transform-origin: top right
-        }
-
-        .fa-layers-bottom-right {
-            bottom: var(--fa-bottom, 0);
-            right: var(--fa-right, 0);
-            top: auto;
-            -webkit-transform: scale(var(--fa-layers-scale, .25));
-            transform: scale(var(--fa-layers-scale, .25));
-            -webkit-transform-origin: bottom right;
-            transform-origin: bottom right
-        }
-
-        .fa-layers-bottom-left {
-            bottom: var(--fa-bottom, 0);
-            left: var(--fa-left, 0);
-            right: auto;
-            top: auto;
-            -webkit-transform: scale(var(--fa-layers-scale, .25));
-            transform: scale(var(--fa-layers-scale, .25));
-            -webkit-transform-origin: bottom left;
-            transform-origin: bottom left
-        }
-
-        .fa-layers-top-right {
-            top: var(--fa-top, 0);
-            right: var(--fa-right, 0);
-            -webkit-transform: scale(var(--fa-layers-scale, .25));
-            transform: scale(var(--fa-layers-scale, .25));
-            -webkit-transform-origin: top right;
-            transform-origin: top right
-        }
-
-        .fa-layers-top-left {
-            left: var(--fa-left, 0);
-            right: auto;
-            top: var(--fa-top, 0);
-            -webkit-transform: scale(var(--fa-layers-scale, .25));
-            transform: scale(var(--fa-layers-scale, .25));
-            -webkit-transform-origin: top left;
-            transform-origin: top left
-        }
-
-        .fa-1x {
-            font-size: 1em
-        }
-
-        .fa-2x {
-            font-size: 2em
-        }
-
-        .fa-3x {
-            font-size: 3em
-        }
-
-        .fa-4x {
-            font-size: 4em
-        }
-
-        .fa-5x {
-            font-size: 5em
-        }
-
-        .fa-6x {
-            font-size: 6em
-        }
-
-        .fa-7x {
-            font-size: 7em
-        }
-
-        .fa-8x {
-            font-size: 8em
-        }
-
-        .fa-9x {
-            font-size: 9em
-        }
-
-        .fa-10x {
-            font-size: 10em
-        }
-
-        .fa-2xs {
-            font-size: .625em;
-            line-height: .1em;
-            vertical-align: .225em
-        }
-
-        .fa-xs {
-            font-size: .75em;
-            line-height: .0833333337em;
-            vertical-align: .125em
-        }
-
-        .fa-sm {
-            font-size: .875em;
-            line-height: .0714285718em;
-            vertical-align: .0535714295em
-        }
-
-        .fa-lg {
-            font-size: 1.25em;
-            line-height: .05em;
-            vertical-align: -.075em
-        }
-
-        .fa-xl {
-            font-size: 1.5em;
-            line-height: .0416666682em;
-            vertical-align: -.125em
-        }
-
-        .fa-2xl {
-            font-size: 2em;
-            line-height: .03125em;
-            vertical-align: -.1875em
-        }
-
-        .fa-fw {
-            text-align: center;
-            width: 1.25em
-        }
-
-        .fa-ul {
-            list-style-type: none;
-            margin-left: var(--fa-li-margin, 2.5em);
-            padding-left: 0
-        }
-
-        .fa-ul>li {
-            position: relative
-        }
-
-        .fa-li {
-            left: calc(var(--fa-li-width, 2em) * -1);
-            position: absolute;
-            text-align: center;
-            width: var(--fa-li-width, 2em);
-            line-height: inherit
-        }
-
-        .fa-border {
-            border-color: var(--fa-border-color, #eee);
-            border-radius: var(--fa-border-radius, .1em);
-            border-style: var(--fa-border-style, solid);
-            border-width: var(--fa-border-width, .08em);
-            padding: var(--fa-border-padding, .2em .25em .15em)
-        }
-
-        .fa-pull-left {
-            float: left;
-            margin-right: var(--fa-pull-margin, .3em)
-        }
-
-        .fa-pull-right {
-            float: right;
-            margin-left: var(--fa-pull-margin, .3em)
-        }
-
-        .fa-beat {
-            -webkit-animation-name: fa-beat;
-            animation-name: fa-beat;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-            animation-timing-function: var(--fa-animation-timing, ease-in-out)
-        }
-
-        .fa-bounce {
-            -webkit-animation-name: fa-bounce;
-            animation-name: fa-bounce;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1));
-            animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1))
-        }
-
-        .fa-fade {
-            -webkit-animation-name: fa-fade;
-            animation-name: fa-fade;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
-            animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
-        }
-
-        .fa-beat-fade {
-            -webkit-animation-name: fa-beat-fade;
-            animation-name: fa-beat-fade;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
-            animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
-        }
-
-        .fa-flip {
-            -webkit-animation-name: fa-flip;
-            animation-name: fa-flip;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-            animation-timing-function: var(--fa-animation-timing, ease-in-out)
-        }
-
-        .fa-shake {
-            -webkit-animation-name: fa-shake;
-            animation-name: fa-shake;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-            animation-timing-function: var(--fa-animation-timing, linear)
-        }
-
-        .fa-spin {
-            -webkit-animation-name: fa-spin;
-            animation-name: fa-spin;
-            -webkit-animation-delay: var(--fa-animation-delay, 0);
-            animation-delay: var(--fa-animation-delay, 0);
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 2s);
-            animation-duration: var(--fa-animation-duration, 2s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-            animation-timing-function: var(--fa-animation-timing, linear)
-        }
-
-        .fa-spin-reverse {
-            --fa-animation-direction: reverse
-        }
-
-        .fa-pulse,
-        .fa-spin-pulse {
-            -webkit-animation-name: fa-spin;
-            animation-name: fa-spin;
-            -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-            -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
-            animation-timing-function: var(--fa-animation-timing, steps(8))
-        }
-
-        @media (prefers-reduced-motion:reduce) {
-
-            .fa-beat,
-            .fa-beat-fade,
-            .fa-bounce,
-            .fa-fade,
-            .fa-flip,
-            .fa-pulse,
-            .fa-shake,
-            .fa-spin,
-            .fa-spin-pulse {
-                -webkit-animation-delay: -1ms;
-                animation-delay: -1ms;
-                -webkit-animation-duration: 1ms;
-                animation-duration: 1ms;
-                -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
-                transition-delay: 0s;
-                transition-duration: 0s
-            }
-        }
-
-        @-webkit-keyframes fa-beat {
-
-            0%,
-            90% {
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-
-            45% {
-                -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-                transform: scale(var(--fa-beat-scale, 1.25))
-            }
-        }
-
-        @keyframes fa-beat {
-
-            0%,
-            90% {
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-
-            45% {
-                -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-                transform: scale(var(--fa-beat-scale, 1.25))
-            }
-        }
-
-        @-webkit-keyframes fa-bounce {
-            0% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-
-            10% {
-                -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
-                transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
-            }
-
-            30% {
-                -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
-                transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
-            }
-
-            50% {
-                -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
-                transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
-            }
-
-            57% {
-                -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
-                transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
-            }
-
-            64% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-
-            100% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-        }
-
-        @keyframes fa-bounce {
-            0% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-
-            10% {
-                -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
-                transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
-            }
-
-            30% {
-                -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
-                transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
-            }
-
-            50% {
-                -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
-                transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
-            }
-
-            57% {
-                -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
-                transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
-            }
-
-            64% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-
-            100% {
-                -webkit-transform: scale(1, 1) translateY(0);
-                transform: scale(1, 1) translateY(0)
-            }
-        }
-
-        @-webkit-keyframes fa-fade {
-            50% {
-                opacity: var(--fa-fade-opacity, .4)
-            }
-        }
-
-        @keyframes fa-fade {
-            50% {
-                opacity: var(--fa-fade-opacity, .4)
-            }
-        }
-
-        @-webkit-keyframes fa-beat-fade {
-
-            0%,
-            100% {
-                opacity: var(--fa-beat-fade-opacity, .4);
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-
-            50% {
-                opacity: 1;
-                -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-                transform: scale(var(--fa-beat-fade-scale, 1.125))
-            }
-        }
-
-        @keyframes fa-beat-fade {
-
-            0%,
-            100% {
-                opacity: var(--fa-beat-fade-opacity, .4);
-                -webkit-transform: scale(1);
-                transform: scale(1)
-            }
-
-            50% {
-                opacity: 1;
-                -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-                transform: scale(var(--fa-beat-fade-scale, 1.125))
-            }
-        }
-
-        @-webkit-keyframes fa-flip {
-            50% {
-                -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-                transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
-            }
-        }
-
-        @keyframes fa-flip {
-            50% {
-                -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-                transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
-            }
-        }
-
-        @-webkit-keyframes fa-shake {
-            0% {
-                -webkit-transform: rotate(-15deg);
-                transform: rotate(-15deg)
-            }
-
-            4% {
-                -webkit-transform: rotate(15deg);
-                transform: rotate(15deg)
-            }
-
-            24%,
-            8% {
-                -webkit-transform: rotate(-18deg);
-                transform: rotate(-18deg)
-            }
-
-            12%,
-            28% {
-                -webkit-transform: rotate(18deg);
-                transform: rotate(18deg)
-            }
-
-            16% {
-                -webkit-transform: rotate(-22deg);
-                transform: rotate(-22deg)
-            }
-
-            20% {
-                -webkit-transform: rotate(22deg);
-                transform: rotate(22deg)
-            }
-
-            32% {
-                -webkit-transform: rotate(-12deg);
-                transform: rotate(-12deg)
-            }
-
-            36% {
-                -webkit-transform: rotate(12deg);
-                transform: rotate(12deg)
-            }
-
-            100%,
-            40% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-        }
-
-        @keyframes fa-shake {
-            0% {
-                -webkit-transform: rotate(-15deg);
-                transform: rotate(-15deg)
-            }
-
-            4% {
-                -webkit-transform: rotate(15deg);
-                transform: rotate(15deg)
-            }
-
-            24%,
-            8% {
-                -webkit-transform: rotate(-18deg);
-                transform: rotate(-18deg)
-            }
-
-            12%,
-            28% {
-                -webkit-transform: rotate(18deg);
-                transform: rotate(18deg)
-            }
-
-            16% {
-                -webkit-transform: rotate(-22deg);
-                transform: rotate(-22deg)
-            }
-
-            20% {
-                -webkit-transform: rotate(22deg);
-                transform: rotate(22deg)
-            }
-
-            32% {
-                -webkit-transform: rotate(-12deg);
-                transform: rotate(-12deg)
-            }
-
-            36% {
-                -webkit-transform: rotate(12deg);
-                transform: rotate(12deg)
-            }
-
-            100%,
-            40% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-        }
-
-        @-webkit-keyframes fa-spin {
-            0% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
-            }
-        }
-
-        @keyframes fa-spin {
-            0% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
-            }
-        }
-
-        .fa-rotate-90 {
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg)
-        }
-
-        .fa-rotate-180 {
-            -webkit-transform: rotate(180deg);
-            transform: rotate(180deg)
-        }
-
-        .fa-rotate-270 {
-            -webkit-transform: rotate(270deg);
-            transform: rotate(270deg)
-        }
-
-        .fa-flip-horizontal {
-            -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1)
-        }
-
-        .fa-flip-vertical {
-            -webkit-transform: scale(1, -1);
-            transform: scale(1, -1)
-        }
-
-        .fa-flip-both,
-        .fa-flip-horizontal.fa-flip-vertical {
-            -webkit-transform: scale(-1, -1);
-            transform: scale(-1, -1)
-        }
-
-        .fa-rotate-by {
-            -webkit-transform: rotate(var(--fa-rotate-angle, none));
-            transform: rotate(var(--fa-rotate-angle, none))
-        }
-
-        .fa-stack {
-            display: inline-block;
-            vertical-align: middle;
-            height: 2em;
-            position: relative;
-            width: 2.5em
-        }
-
-        .fa-stack-1x,
-        .fa-stack-2x {
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: var(--fa-stack-z-index, auto)
-        }
-
-        .svg-inline--fa.fa-stack-1x {
-            height: 1em;
-            width: 1.25em
-        }
-
-        .svg-inline--fa.fa-stack-2x {
-            height: 2em;
-            width: 2.5em
-        }
-
-        .fa-inverse {
-            color: var(--fa-inverse, #fff)
-        }
-
-        .fa-sr-only,
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0
-        }
-
-        .fa-sr-only-focusable:not(:focus),
-        .sr-only-focusable:not(:focus) {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0
-        }
-
-        .svg-inline--fa .fa-primary {
-            fill: var(--fa-primary-color, currentColor);
-            opacity: var(--fa-primary-opacity, 1)
-        }
-
-        .svg-inline--fa .fa-secondary {
-            fill: var(--fa-secondary-color, currentColor);
-            opacity: var(--fa-secondary-opacity, .4)
-        }
-
-        .svg-inline--fa.fa-swap-opacity .fa-primary {
-            opacity: var(--fa-secondary-opacity, .4)
-        }
-
-        .svg-inline--fa.fa-swap-opacity .fa-secondary {
-            opacity: var(--fa-primary-opacity, 1)
-        }
-
-        .svg-inline--fa mask .fa-primary,
-        .svg-inline--fa mask .fa-secondary {
-            fill: #000
-        }
-
-        .fa-duotone.fa-inverse,
-        .fad.fa-inverse {
-            color: var(--fa-inverse, #fff)
-        }
-    </style>
     <link rel="shortcut icon" href="./Pepe 3.0_files/p3smile.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./Pepe 3.0_files/bootstrap.min.css">
@@ -871,7 +37,7 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <a href="https://Pepe 3.0-eth.com/index.html">
+                        <a href="https://Pepe3.club">
                             <h1 class="logoh1">Pepe 3.0</h1>
 
 
@@ -901,7 +67,7 @@
 
 
                             <li class="menu-item-has-children">
-                                <a href="https://Pepe 3.0-eth.com/#0">Socials</a>
+                                <a href="#socials">Socials</a>
                                 <ul class="submenu">
 
 
@@ -946,14 +112,6 @@
                             <a href="https://t.me/pepe3chat" target="_blank"
                                 class="default-btn default-btn--secondary">
                                 <span>Buy Now
-                                    <!-- <svg class="svg-inline--fa fa-telegram" aria-hidden="true" focusable="false"
-                                        data-prefix="fab" data-icon="" role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
-                                        <path fill="currentColor"
-                                            d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
-                                        </path>
-                                    </svg> -->
-                                    <!-- <i class="fa-brands fa-telegram"></i> Font Awesome fontawesome.com --></span>
                             </a>
 
                         </div>
@@ -970,15 +128,6 @@
         </div>
     </header>
     <!-- ========== Multipage Header Section Ends Here========== -->
-
-
-
-
-
-
-
-
-
 
 
     <!-- ================> Banner section start here <================== -->
@@ -1000,7 +149,7 @@
                             data-aos-duration="2000">
                             <h1>PEPE 3.0</h1>
                             <h3>Stronger Than 1 + 2</h3>
-                            <div class="btn-group">
+                            <div class="btn-group" id="roadmap">
                                 <a href="https://t.me/pepe3chat" target="_blank" class="default-btn"
                                     style="color: white; font-size:x-large; width: 330px; text-align: center;">Buy Now</a>
                             </div>
@@ -1015,9 +164,8 @@
     <!-- ================> Banner section end here <================== -->
 
 
-
-    <!-- ================> About section start here <================== -->
-    <section class="about padding-top padding-bottom" id="roadmap"
+    <!-- ================> Roadmap section start here <================== -->
+    <section class="about padding-top padding-bottom" id="roadmap_top"
         style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,137,59,1) 52%, rgba(0,0,0,1) 100%);">
         <div class="container">
             <div class="about__wrapper">
@@ -1031,7 +179,7 @@
                         <div class="about__content aos-init" data-aos="fade-up" data-aos-duration="2000">
 
                             <h2>Roadmap</h2>
-                            <p class="" style="font-size: x-large; font-weight: bold;">                                
+                            <p class="" style="font-size: x-large; font-weight: bold;">
                                 1. Pepe 3.0 to $billion+<br>
                                 2. Pepe 100K+ holders<br>
                                 3. Pepe AI web3 wallet<br>
@@ -1039,7 +187,11 @@
                                 5. Pepe decentralizes world<br>
                                 6. Pepe all the things<br>  
                                 7. Pepe to #1 crypto
-                            <p></p>
+                            <p id="tokenomics"></p>
+                        </div>
+                        <div class="btn-group" id="roadmap">
+                            <a href="https://t.me/pepe3chat" target="_blank" class="default-btn"
+                                style="color: white; font-size:x-large; width: 330px; text-align: center;">Buy Now</a>
                         </div>
 
                     </div>
@@ -1047,14 +199,11 @@
             </div>
         </div>
     </section>
-    <!-- ================> About section end here <================== -->
-
-
-
+    <!-- ================> Roadmap section end here <================== -->
 
 
     <!-- ================> Tokenomics section start here <================== -->
-    <section class="about padding-top padding-bottom" id="tokenomics"
+    <section class="about padding-top padding-bottom" id="tokenomics_top"
         style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,137,59,1) 52%, rgba(0,0,0,1) 100%);">
         <div class="container">
             <div class="about__wrapper">
@@ -1066,7 +215,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about__content aos-init" data-aos="fade-up" data-aos-duration="2000">
-                            <br><br><br><br>
+                            <br><br>
                             <h2>Tokenomics</h2>
                             <p class="aboutp">
                                 <div style="font-size: x-large; font-weight: bold;">
@@ -1081,6 +230,10 @@
                                 <br>
                             <p></p>
                         </div>
+                        <div class="btn-group" id="roadmap">
+                            <a href="https://t.me/pepe3chat" target="_blank" class="default-btn"
+                                style="color: white; font-size:x-large; width: 330px; text-align: center;">Buy Now</a>
+                        </div>
 
                     </div>
                 </div>
@@ -1090,17 +243,8 @@
     <!-- ================> Tokenomics section end here <================== -->
 
 
-
-
-
-
-
-
-
-
-
     <!-- ================> Footer section start here <================== -->
-    <footer class="footer" style="background-color:#000;">
+    <!-- <footer class="footer" style="background-color:#000;">
 
         <div class="footer__copyright">
             <div class="container">
@@ -1109,7 +253,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- ================> Footer section end here <================== -->
 
 

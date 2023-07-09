@@ -1031,7 +1031,7 @@ ol {
 
 /*================***Mutlipage  Header Section Start Here     ***===================*/
 .header-section {
-  background: #000000;
+  /* background: #000000; */
   z-index: 999;
   position: absolute;
 }
@@ -1060,7 +1060,7 @@ ol {
 }
 
 .header-wrapper {
-  padding: 23px 0;
+  padding: 40px 0;
 }
 @media (min-width: 576px) {
   .header-wrapper {
@@ -1212,7 +1212,7 @@ ol {
     -ms-transform: scaleY(0);
     transform: scaleY(0);
     transform-origin: top;
-    background: rgba(29, 37, 59, 0.99);
+    background: 0x000;
     -webkit-backdrop-filter: blur(20px);
   }
   .menu li {

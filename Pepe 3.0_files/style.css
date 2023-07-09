@@ -1059,8 +1059,35 @@ ol {
   }
 }
 
+/* @keyframes hover {
+  0%,
+  to {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+} */
+
+@keyframes hover {
+  0%,
+  to {
+      transform:scale(1.0);
+  }
+
+  50% {
+      transform:scale(1.5);
+  }
+}
+
+
+.animate-hover {
+  animation: hover 3s linear infinite;
+}
+
 .header-wrapper {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 @media (min-width: 576px) {
   .header-wrapper {

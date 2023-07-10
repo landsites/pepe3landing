@@ -1082,12 +1082,12 @@ ol {
 }
 
 .animate-growth {
-  animation: growth 10s linear infinite;
+  animation: growth 4s linear infinite;
 }
 
 
 .animate-hover {
-  animation: hover 4s linear infinite;
+  animation: hover 2s linear infinite;
 }
 
 .header-wrapper {

@@ -1059,7 +1059,7 @@ ol {
   }
 }
 
-/* @keyframes hover {
+@keyframes hover {
   0%,
   to {
     transform: translateY(0);
@@ -1068,9 +1068,9 @@ ol {
   50% {
     transform: translateY(-30px);
   }
-} */
+}
 
-@keyframes hover {
+@keyframes growth {
   0%,
   to {
       transform:scale(1.0);
@@ -1081,9 +1081,13 @@ ol {
   }
 }
 
+.animate-growth {
+  animation: growth 10s linear infinite;
+}
+
 
 .animate-hover {
-  animation: hover 10s linear infinite;
+  animation: hover 4s linear infinite;
 }
 
 .header-wrapper {

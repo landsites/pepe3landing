@@ -1048,7 +1048,7 @@ ol {
 /*================***Mutlipage  Header Section Start Here     ***===================*/
 .header-section {
   /* background: #000000; */
-  z-index: 999;
+  z-index: 009;
   position: absolute;
 }
 @media (min-width: 992px) {
@@ -1113,7 +1113,7 @@ ol {
 }
 
 .header-wrapper {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 @media (min-width: 576px) {
   .header-wrapper {

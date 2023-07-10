@@ -1075,35 +1075,41 @@ ol {
   }
 }
 
+@keyframes hover5 {
+  0%,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-hover5 {
+  animation: hover5 5s linear infinite;
+}
 @keyframes hover {
   0%,
   to {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-100px);
   }
 }
-
+.animate-hover {
+  animation: hover 2s linear infinite;
+}
 @keyframes growth {
   0%,
   to {
       transform:scale(1.0);
   }
-
   50% {
       transform:scale(2);
   }
 }
-
 .animate-growth {
   animation: growth 20s linear infinite;
-}
-
-
-.animate-hover {
-  animation: hover 2s linear infinite;
 }
 
 .header-wrapper {

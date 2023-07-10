@@ -1082,7 +1082,7 @@ ol {
   }
 
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-100px);
   }
 }
 
@@ -1098,7 +1098,7 @@ ol {
 }
 
 .animate-growth {
-  animation: growth 10s linear infinite;
+  animation: growth 20s linear infinite;
 }
 
 

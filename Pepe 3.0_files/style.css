@@ -1075,7 +1075,7 @@ ol {
   }
 }
 
-@keyframes hover5 {
+@keyframes hover3 {
   0%,
   to {
     transform: translateY(0);
@@ -1084,8 +1084,8 @@ ol {
     transform: translateX(10px);
   }
 }
-.animate-hover5 {
-  animation: hover5 5s linear infinite;
+.animate-hover3 {
+  animation: hover3 3s linear infinite;
 }
 @keyframes hover {
   0%,

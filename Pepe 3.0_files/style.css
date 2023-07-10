@@ -31,6 +31,13 @@ html {
   src: url(visby.otf);
 }
 
+@font-face {
+  font-family: 'Slackey';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/slackey/v24/N0bV2SdQO-5yM0-dGlNQJPTVkdc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* Sections
    ========================================================================== */
@@ -68,7 +75,7 @@ h1 {
 }
 
 .logoh1 {
-  font-family: visby;
+  font-family: Slackey;
   letter-spacing: 1px;
   
 }
@@ -383,7 +390,7 @@ body {
   color: #dddddd;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: "Inter", sans-serif;
+  font-family: "Slackey", sans-serif;
   background-color: #000;
 }
 
@@ -393,8 +400,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Bakbak One", cursive; */
-  font-family: visby;
+  /* font-family: "Slackey", cursive; */
+  font-family: Slackey;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
@@ -1119,7 +1126,7 @@ ol {
     display: none;
   }
   .logoh1 {
-    font-family: visby;
+    font-family: Slackey;
     letter-spacing: 1px;
     font-size: 50px;
     width: 300px;
@@ -1136,7 +1143,7 @@ ol {
   font-size: 16px;
   padding: 15px 22px;
   text-transform: uppercase;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   font-weight: 400;
 }
 .menu > li > a i {
@@ -1192,7 +1199,7 @@ ol {
   .menu li .submenu li a {
     padding: 10px 20px;
     text-transform: uppercase;
-    font-family: "Bakbak One", cursive;
+    font-family: "Slackey", cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1551,7 +1558,7 @@ ol {
 }
 .banner__content p {
   font-size: 1.125rem;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   line-height: 1.65;
   max-inline-size: 42ch;
 }
@@ -1799,7 +1806,7 @@ ol {
 .default-btn {
   font-size: 0.875rem;
   text-decoration: none;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   color: #fff;
   padding: 0 1.7rem;
   line-height: 50px;
@@ -1970,7 +1977,7 @@ ol {
 .mint-step__list-item {
   font-size: 1.125rem;
   text-transform: capitalize;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   font-weight: 700;
   border-top: 1px solid #000000;
   padding-block: 1rem;
@@ -2312,7 +2319,7 @@ ol {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   font-weight: 400;
 }
 .article-pagination .prev-article a svg,
@@ -2413,7 +2420,7 @@ ol {
   font-size: 1.25rem;
   display: block;
   font-weight: 400;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
 }
 .comments .comment-list .comment .com-content .com-title .com-title-meta h6 a {
   color: #000000;
@@ -2673,7 +2680,7 @@ ol {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #dddddd;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   padding: 20px 30px;
 }
 .widget.widget-category .widget-wrapper li a svg {
@@ -2804,7 +2811,7 @@ ol {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   padding: 7px 13px;
   border-radius: 2px;
   background-color: #000000;
@@ -2833,7 +2840,7 @@ ol {
 .widget.widget-service .widget-service__list-item p {
   font-size: 1.125rem;
   font-weight: 700;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
 }
 .widget.widget-service .widget-service__list-item:hover, .widget.widget-service .widget-service__list-item.active {
   background-color: #000000;
@@ -3149,7 +3156,7 @@ ol {
 .roadmap__item-header p {
   font-size: calc(1.275rem + 0.2571428571vw);
   font-weight: 700;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   color: #3f5468;
 }
 @media (min-width: 1400px) {
@@ -3296,7 +3303,7 @@ ol {
   font-size: calc(1.275rem + 0.2571428571vw);
   background-color: #000000;
   color: #000000;
-  font-family: "Bakbak One", cursive;
+  font-family: "Slackey", cursive;
   font-weight: 400;
   padding: 1.5rem 1rem;
   border: none;

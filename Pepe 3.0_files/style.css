@@ -1281,7 +1281,10 @@ ol {
     color: #fff;
   }
   .menu li a:hover {
-    background: rgba(29, 37, 59, 0.6);
+    /* background: rgba(29, 37, 59, 0.6); */
+    background: yellow;
+    color: red;  
+    opacity: 50%;
   }
   .menu li .submenu {
     padding-left: 20px;

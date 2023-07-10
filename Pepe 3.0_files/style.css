@@ -1077,13 +1077,13 @@ ol {
   }
 
   50% {
-      transform:scale(1.5);
+      transform:scale(2);
   }
 }
 
 
 .animate-hover {
-  animation: hover 3s linear infinite;
+  animation: hover 20s linear infinite;
 }
 
 .header-wrapper {

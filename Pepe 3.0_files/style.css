@@ -41,6 +41,15 @@ html {
 
 /* Sections
    ========================================================================== */
+
+   /**
+   * stop scroll-x
+   */
+   html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
 /**
  * Remove the margin in all browsers.
  */
@@ -1084,12 +1093,12 @@ ol {
   }
 
   50% {
-      transform:scale(1.5);
+      transform:scale(2);
   }
 }
 
 .animate-growth {
-  animation: growth 4s linear infinite;
+  animation: growth 10s linear infinite;
 }
 
 
